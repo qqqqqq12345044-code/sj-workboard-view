@@ -1,5 +1,5 @@
 @echo off
-rem SJ Workboard 읽기 전용 사본: 보드가 바뀌었을 때만 암호화 사본을 만들어 gh-pages 브랜치에 push
+rem SJ Workboard read-only snapshot: build encrypted copy, push to gh-pages only when board changed
 cd /d "%~dp0"
 node build.mjs || exit /b 1
 git add docs/index.html
